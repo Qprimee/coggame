@@ -1,1 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+    <h2>بازی حدس اعداد از کاج گیم</h2>
+    <div class="start_btn">
+        <button>شروع</button>
+    </div>
+
+    <div class="info_box">
+        <div class="info-title"><span>قوانین بازی حدس اعداد</span></div>
+        <div class="info-list">
+            <div class="info">1. شما فقط <span>15 ثانیه</span> برای  حل سوال وقت دارید.</div>
+            <div class="info">2. وقتی جواب سوال را انتخاب کردید نمی توانید جواب را تغیر بدید.</div>
+            <div class="info">3. وقتی زمان بازی تمام شد نمی توانید جواب سوال را انتخاب کنید.</div>
+            <div class="info">4. وقتی بازی را شروع کردید نمی توانید از بازی بیرون بروید.</div>
+            <div class="info">5. بر اساس پاسخ های صحیح خود امتیاز دریافت خواهید کرد.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">خروج از آزمون</button>
+            <button class="restart">ادامه</button>
+        </div>
+    </div>
+
+    <div class="quiz_box">
+        <header>
+            <div class="title">بازی حدس اعداد</div>
+            <div class="timer">
+                <div class="time_left_txt">زمان باقی مانده</div>
+                <div class="timer_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text"></div>
+            <div class="option_list"></div>
+        </section>
+        <footer>
+            <div class="total_que"></div>
+            <button class="next_btn">سوال بعد</button>
+        </footer>
+    </div>
+
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">شما امتحان را کامل کرده اید!</div>
+        <div class="score_text">
+
+        </div>
+        <div class="buttons">
+            <button class="restart">تکرار مسابقه</button>
+            <button class="quit">ترک مسابقه</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="questions.js"></script>
+</body>
+
+</html>

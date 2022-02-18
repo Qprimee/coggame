@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&family=Roboto+Mono&display=swap');
+
+
+* {
+    font-family: 'Lalezar', cursive;
+}
+
+body {
+    background-color: rgb(97, 255, 242);
+}
+section {
+    text-align: center;
+}
+
+h1, h2 {
+    color: rgb(255, 0, 140);
+}
+
+.game--container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 306px;
+    margin: 50px auto;
+}
+.cell {
+    font-family: "Permanent Marker", cursive;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 0 0 1px #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+    line-height: 100px;
+    font-size: 60px;
+    color: white;
+}
+
+.game--restart {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.game--restart:hover {
+    background-color: rgb(245, 0, 245);
+}
